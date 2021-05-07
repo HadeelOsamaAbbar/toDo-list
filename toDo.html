@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="toDo.css">
+</head>
+<body>
+    <main>
+        <div class="header"> 
+            <h1>TO-DO LIST</h1>
+        </div>
+        <form id="todo_form">
+        <div class="classAddItem">
+          <input id="new_item" type="text" placeholder="Add your new task" 
+          required title="Please fill this box!" onfocus="this.value=''" value="">
+          <button class="addItem"id="add-btn" onclick="addTasks(2)">ADD</button>
+          <p class="warn">This text box shouldn't be empty</p>
+         </div>
+        </form>
+        <hr>
+        <div class="itemList">
+            <h3>Not Completed</h3>
+            <ul class="results">
+            </ul>
+          </div>
+          <hr>
+          <h3>Completed</h3>
+          <div class="itemList">
+            <ul class="completed">
+            </ul>
+          </div>
+        
+        <script src="toDo.js"></script>
+</body>
+</html>

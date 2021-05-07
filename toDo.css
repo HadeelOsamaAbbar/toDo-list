@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*style body*/
+body{
+    background-image: url('back4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    font-family: 'Zen Dots', cursive;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+/*style main "all task"*/
+main{
+    width: 600px;
+    margin-top: 150px;
+    padding: 10px;
+    text-align: center;
+    min-height: 100vh;
+    
+}
+/*style text box*/
+.classAddItem input{
+    width: 400px;
+    background-color: rgba(196, 186, 186, 0.1);
+    border-radius: 5px;
+    border: 1px solid;
+    border-bottom: blue;
+    padding: 10px;
+    font-size: large;
+}
+hr{
+    margin: 40px;
+    margin-bottom: 0px;
+    color: black;
+    width: 500px;
+}
+/*style add btn*/
+.classAddItem .addItem{
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: 0px solid;
+    width: 80px;
+    font-size: large;
+    padding: 8px;
+}
+.classAddItem .addItem:hover{
+    background-color: rgb(255, 254, 254);
+    color: rgb(5, 5, 5);
+}
+/*style warn msg*/
+.classAddItem .warn{
+   color: white;
+   background-color: rgb(224, 4, 4);
+   border-radius: 5px;
+   width: 300px;
+   margin-left: 150px;
+   padding: 4px;
+   display: none;
+}
+/*style tasks*/
+.itemList .liSty{
+    background-color: rgba(6, 10, 245, 0.315);
+    width: 470px;
+    padding: 10px;
+    font-size: large;
+    margin: 10px;
+    margin-left: 40px;
+    color: white;
+    list-style: none;
+    height: 40px;
+}
+
+.itemList .liSty label{
+  margin-top: 10px;
+
+}
+input:focus{
+    background-color: rgba(227, 238, 240, 0.4);
+}
+.itemList .liSty label{
+   float:left;
+}
+/*style btn delete & complete*/
+.itemList .liSty button{
+    float: right;
+    padding: 8px;
+    border-radius: 5px;
+    border: 0px solid;
+    margin: 3px;
+}
+.delClass:hover{
+    background-color: rgb(230, 8, 8);
+ }
+.comClass:hover{
+    background-color: rgb(21, 245, 32);
+ }
+
+ .itemList .copmleted .comClass{
+     display: none;
+ }
+ @media (max-width:500px){
+    main{
+        margin: 0px;
+        margin-top: 50px;
+        width: 400px;
+        text-align: center;
+        padding: 10px;
+    }
+    hr{
+        width: 350px;
+        margin-left: 60px;
+    }
+    .classAddItem input{
+        width:300px;
+        margin-left: 80px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .itemList .liSty{
+        width:350px;
+    }
+    .classAddItem .addItem{
+        display: block;
+        margin-left:200px;
+        width: 100px;
+    }
+ }
